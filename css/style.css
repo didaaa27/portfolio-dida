@@ -1554,3 +1554,126 @@ img {
     .btn { width: 100%; }
     .hero-buttons { width: 100%; }
 }
+
+
+/* ====================================================
+   BUTTONS (HERO SECTION)
+==================================================== */
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ccff00;
+    color: #0d0d0d;
+    border: 1px solid #ccff00;
+}
+
+.btn-primary:hover {
+    background-color: #b3e600;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(204, 255, 0, 0.25);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #f3f4f6;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(204, 255, 0, 0.1);
+    border-color: #ccff00;
+    color: #ccff00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(204, 255, 0, 0.15);
+}
+
+/* ====================================================
+   SKILLS GRID & CARDS
+==================================================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.skill-card {
+    background: #111418;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.skill-card:hover {
+    border-color: #ccff00;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.skill-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.skill-number {
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.skill-icon {
+    font-size: 2.2rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.15) rotate(3deg);
+}
+
+.skill-card h4 {
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.skill-card p {
+    font-size: 0.88rem;
+    color: #9ca3af;
+    line-height: 1.5;
+    margin: 0;
+}
