@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         drawMatrix();
 
         // Typewriter Effect
-        const words = ["Junior Software Engineer", "Information Technology Graduate", "Web Developer"];
+        const words = ["Material & Inventory Operations", "Information Technology Graduate", "Web Developer"];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
